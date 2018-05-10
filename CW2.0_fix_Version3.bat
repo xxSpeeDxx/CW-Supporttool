@@ -5,12 +5,12 @@ goto :Anfang
 :Anfang
 echo Welchen Fehler hast du?
 echo ----------------------------------------------
-echo 1= Patcher wird nicht geöffnet
+echo 1= Patcher wird nicht geÃ¶ffnet (BETA)
 echo 2= Client startet mit Fehlermeldung
 echo 3= Client startet nicht (ohne Fehlermeldung)
 echo 4= Bekomme Kick nach der Char auswahl
 echo ----------------------------------------------
-echo Bitte trage nun deine gewünschte Zahl hier ein:
+echo Bitte trage nun deine gewÃ¼nschte Zahl hier ein:
 set /p EINGABE=
 
 IF not DEFINED EINGABE goto :Falsche_Eingabe
@@ -20,7 +20,7 @@ If "%EINGABE%" == "3" goto :Auswahl3
 If "%EINGABE%" == "4" goto :Auswahl4
 
 :Falsche_Eingabe
-echo Du hast eine falsche Eingabe getätigt!
+echo Du hast eine falsche Eingabe getÃ¤tigt!
 echo Bitte trage eine plausible Zahl ein.
 pause
 cls
@@ -52,11 +52,11 @@ del pack\locale_en.* /s /q
 if errorlevel 1 goto error
 goto fertig
 :error
-echo Fehler beim Löschen der Dateien.
+echo Fehler beim LÃ¶schen der Dateien.
 pause
 exit
 :fertig
-echo Die  Datei wurde gelöscht.
+echo Die  Datei wurde gelÃ¶scht.
 echo Bitte Patchen und schauen ob der Client wieder geht.
 pause
 exit
@@ -70,7 +70,7 @@ pause
 exit
 
 :Auswahl4
-echo Versuch dein Char über die Homepage zu "Entbuggen".
+echo Versuch dein Char Ã¼ber die Homepage zu "Entbuggen".
 echo Wenn dies beim ersten mal nicht klappt warte 15 Minuten und versuche es erneut.
 echo --------------------------------------------------------------------------------------------
 echo Wenn dies immer noch nicht geholfen hat melde dich bitte im Forum mit deinem Fehler.
